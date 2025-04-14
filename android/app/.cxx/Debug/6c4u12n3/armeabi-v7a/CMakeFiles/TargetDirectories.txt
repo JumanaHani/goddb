@@ -1,0 +1,2 @@
+C:/Users/engsu/goddb/android/app/.cxx/Debug/6c4u12n3/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/engsu/goddb/android/app/.cxx/Debug/6c4u12n3/armeabi-v7a/CMakeFiles/rebuild_cache.dir

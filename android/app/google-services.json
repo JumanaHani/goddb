@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "794422791312",
+    "project_id": "goddb-6c243",
+    "storage_bucket": "goddb-6c243.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794422791312:android:8e0b93ed6fed09cf9ddc15",
+        "android_client_info": {
+          "package_name": "com.example.goddb_task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUl_B4R_UCbO8VXaz2yBGsCa9Px-qXFjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
