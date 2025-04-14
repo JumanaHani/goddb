@@ -78,7 +78,6 @@ class _LoginPageState extends State<LoginPage> {
                               ..onTap = () {
                                 // Handle Sign Up tap
                                 Navigator.pushNamed(context, '/SignUp');
-                                print("Sign Up tapped!");
                               },
                           ),
                         ],
@@ -87,7 +86,7 @@ class _LoginPageState extends State<LoginPage> {
                     SizedBox(
                       height: 25.h,
                     ),
-                    Container(
+                    SizedBox(
                       width: 552.w,
                       height: 600.h,
                       child: BlocConsumer<AuthCubit, AuthState>(
@@ -215,12 +214,12 @@ class _LoginPageState extends State<LoginPage> {
                         },
                       ),
                     ),
-                    Container(
+                    SizedBox(
                       width: 552.w,
                       child: ElevatedButton(
                         onPressed: () {
-                          Navigator.pushReplacementNamed(
-                              context, '/HomePage');
+                          // Navigator.pushReplacementNamed(
+                          //     context, '/HomePage');
                           context.read<AuthCubit>().loginWithEmail(
                                 emailController.text,
                                 passwordController.text,

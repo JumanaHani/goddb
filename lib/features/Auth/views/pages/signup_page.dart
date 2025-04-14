@@ -107,7 +107,7 @@ class SignUpPage extends StatelessWidget {
                                       children: [
                                         Text('Full Name'),
                                         TextField(
-                                          controller: emailController,
+                                          controller: nameController,
                                           style: Theme.of(context)
                                               .textTheme
                                               .bodyMedium
@@ -203,7 +203,7 @@ class SignUpPage extends StatelessWidget {
                                               context
                                                   .read<AuthCubit>()
                                                   .signUpWithEmail(
-                                                      email, password);
+                                                      email, password,name);
                                             },
                                             child: const Text('Sign Up'),
                                           ),

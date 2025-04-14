@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -18,8 +19,9 @@ import 'features/tasks/cubits/task_cubit.dart';
 import 'features/tasks/models/task.dart';
 
 late final taskBox;
-void main() {
-  init();
+Future<void> main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+ await init();
   runApp(MultiBlocProvider(
     providers: [
       BlocProvider(create: (_) => AuthCubit()),
@@ -32,6 +34,9 @@ void main() {
 }
 
 Future<void> init() async {
+
+  await Firebase.initializeApp();
+  
   await di.configure();
   await Hive.initFlutter();
   Hive.registerAdapter(ProjectAdapter());
